@@ -21,8 +21,9 @@
 	<dependency>
 	    <groupId>ch.qos.logback</groupId>
 	    <artifactId>logback-classic</artifactId>
-	    <version>1.3.0-alpha5</version>
+	    <version>1.2.3</version>
 	</dependency>
+
     <!-- Spring -->
 		<!-- 1)包含Spring 框架基本的核心工具类。Spring 其它组件要都要使用到这个包里的类，是其它组件的基本核心 -->
 		<dependency>
