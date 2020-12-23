@@ -1,6 +1,6 @@
 package com.dist.o2o.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * 店铺
@@ -23,7 +23,8 @@ public class Shop {
 	//超级管理员给店家的提醒
 	private String advice;
 	private Area area;
-	private PersonInfo personInfo;
+	private String shopAddr;
+	private PersonInfo owner;
 	private ShopCategory shopCategory;
 	public Long getShopId() {
 		return shopId;
@@ -64,8 +65,8 @@ public class Shop {
 	public Date getCreateTime() {
 		return createTime;
 	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setCreateTime(Date date) {
+		this.createTime = date;
 	}
 	public Date getLastEditTime() {
 		return lastEditTime;
@@ -91,17 +92,24 @@ public class Shop {
 	public void setArea(Area area) {
 		this.area = area;
 	}
-	public PersonInfo getPersonInfo() {
-		return personInfo;
-	}
-	public void setPersonInfo(PersonInfo personInfo) {
-		this.personInfo = personInfo;
-	}
+	
 	public ShopCategory getShopCategory() {
 		return shopCategory;
 	}
 	public void setShopCategory(ShopCategory shopCategory) {
 		this.shopCategory = shopCategory;
+	}
+	public PersonInfo getOwner() {
+		return owner;
+	}
+	public void setOwner(PersonInfo owner) {
+		this.owner = owner;
+	}
+	public String getShopAddr() {
+		return shopAddr;
+	}
+	public void setShopAddr(String shopAddr) {
+		this.shopAddr = shopAddr;
 	}
 	
 	

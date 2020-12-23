@@ -27,7 +27,9 @@ public class AreaController {
 
 	@Autowired
 	private AreaService areaService;
-	
+	/**
+	 * 日志输出测试
+	 */
 	@RequestMapping(value="/listarea",method=RequestMethod.GET)
 	@ResponseBody
 	public Map<String, Object> listArea(){
